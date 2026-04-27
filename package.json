@@ -1,23 +1,28 @@
 {
   "name": "insighta-intelligence-api",
-  "version": "1.0.0",
-  "description": "Intelligence Query Engine for demographic data",
+  "version": "2.0.0",
+  "description": "A high-performance demographic profile querying system with OAuth 2.0, RBAC, and advanced filtering",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "build": "echo 'Ready'",
-    "seed": "node lib/seed.js"
+    "seed": "node lib/seed.js",
+    "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": ["demographic", "intelligence", "oauth", "api"],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.1.2",
     "pg": "^8.11.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "axios": "^1.6.5"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
